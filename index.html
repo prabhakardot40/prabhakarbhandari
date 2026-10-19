@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Academic and research portfolio of Dr. Prabhakar Bhandari, Mechanical Engineering faculty and researcher.">
+<title>Dr. Prabhakar Bhandari | Academic & Research Portfolio</title>
+<style>
+:root{--navy:#10213b;--blue:#2864dc;--sky:#eaf1ff;--ink:#172033;--muted:#657086;--paper:#f7f9fc;--line:#e4e9f2;--white:#fff;--teal:#16a6a1}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:800;letter-spacing:-.4px;color:var(--navy);font-size:1.02rem}.brand span{color:var(--blue)}.navlinks{display:flex;gap:22px;align-items:center;font-size:.9rem;color:#46516a}.navlinks a:hover{color:var(--blue)}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;border-radius:10px;padding:11px 16px;font-weight:700;font-size:.9rem;background:var(--blue);color:white;border:1px solid var(--blue);transition:.2s}.nav-cta:hover,.button:hover{transform:translateY(-2px);box-shadow:0 8px 20px #2864dc2a}.menu{display:none;background:white;border:1px solid var(--line);border-radius:8px;padding:8px 11px;font-size:1.1rem}
+.hero{background:radial-gradient(circle at 84% 18%,#dce8ff 0,transparent 26%),linear-gradient(135deg,#f5f8ff,#fff 60%,#eef8fa);padding:84px 0 72px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.45fr .75fr;gap:54px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--blue);background:#e9efff;border:1px solid #d8e3ff;border-radius:100px;padding:6px 12px;font-size:.8rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase}.eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--teal)}h1{font-size:clamp(2.6rem,5vw,4.4rem);line-height:1.08;letter-spacing:-.055em;margin:20px 0 14px;color:var(--navy)}h1 em{font-style:normal;color:var(--blue)}.hero p{font-size:1.08rem;color:var(--muted);max-width:650px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}.button.secondary{background:white;color:var(--navy);border-color:var(--line)}.quick-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.quick-links a{font-size:.84rem;color:#43516a;border:1px solid var(--line);padding:7px 10px;border-radius:8px;background:#ffffffb8}.profile-card{background:white;border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 24px 70px #20365b12;position:relative}.avatar{height:230px;border-radius:17px;background:linear-gradient(145deg,#dce8ff,#edf9f8);display:grid;place-items:center;color:var(--blue);font-size:4.4rem;font-weight:850;letter-spacing:-.08em}.profile-card h3{margin:18px 0 2px;color:var(--navy);font-size:1.2rem}.profile-card .role{color:var(--muted);font-size:.92rem;margin:0}.profile-details{border-top:1px solid var(--line);margin-top:18px;padding-top:14px;display:grid;gap:9px;font-size:.88rem}.profile-details div{display:flex;gap:10px}.profile-details strong{min-width:88px;color:var(--navy)}
+.stats{margin-top:-1px;background:white;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}.stat{padding:24px 18px;text-align:center;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;color:var(--navy);font-size:1.35rem}.stat span{font-size:.82rem;color:var(--muted)}
+section{padding:78px 0}.section-head{max-width:720px;margin-bottom:32px}.kicker{color:var(--blue);text-transform:uppercase;font-weight:800;font-size:.77rem;letter-spacing:.13em}.section-head h2{font-size:clamp(1.9rem,3.2vw,2.65rem);letter-spacing:-.04em;color:var(--navy);line-height:1.18;margin:9px 0 12px}.section-head p{color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}.panel{background:white;border:1px solid var(--line);border-radius:18px;padding:25px}.panel h3{margin:0 0 12px;color:var(--navy)}.panel p{color:var(--muted);margin:0 0 12px}.tag-list{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}.tag{font-size:.83rem;font-weight:650;background:var(--sky);color:#244a9d;border-radius:8px;padding:7px 10px}.research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.research-card{background:white;border:1px solid var(--line);border-radius:16px;padding:23px;transition:.2s}.research-card:hover{transform:translateY(-4px);box-shadow:0 16px 35px #10213b0d}.icon{width:43px;height:43px;border-radius:12px;background:var(--sky);display:grid;place-items:center;color:var(--blue);font-size:1.25rem;font-weight:800}.research-card h3{color:var(--navy);font-size:1.06rem;margin:16px 0 8px}.research-card p{color:var(--muted);font-size:.91rem;margin:0}
+.timeline{border-left:2px solid #dbe5fb;margin-left:9px;padding-left:26px;display:grid;gap:23px}.timeline-item{position:relative;background:white;border:1px solid var(--line);border-radius:15px;padding:22px 24px}.timeline-item:before{content:"";position:absolute;left:-34px;top:27px;width:13px;height:13px;background:var(--blue);border:4px solid var(--paper);border-radius:50%}.date{font-size:.8rem;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.07em}.timeline-item h3{margin:5px 0;color:var(--navy)}.timeline-item p{margin:0;color:var(--muted);font-size:.93rem}
+.publication-list{display:grid;gap:13px}.publication{display:grid;grid-template-columns:52px 1fr;gap:16px;padding:19px;background:white;border:1px solid var(--line);border-radius:14px}.pub-no{width:43px;height:43px;border-radius:12px;background:#eef2f8;display:grid;place-items:center;font-weight:800;color:#46516a}.publication h3{font-size:1rem;margin:0 0 5px;color:var(--navy)}.publication p{margin:0;color:var(--muted);font-size:.9rem}.note{background:#fff8e8;border:1px solid #f4e5bd;color:#765b1c;border-radius:12px;padding:13px 15px;font-size:.88rem;margin-top:18px}
+.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.skill-group{background:white;border:1px solid var(--line);border-radius:15px;padding:22px}.skill-group h3{margin:0 0 14px;color:var(--navy)}.skill-group p{color:var(--muted);font-size:.92rem;margin:0}
+.contact{background:var(--navy);color:white;padding:66px 0}.contact-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center}.contact h2{font-size:clamp(2rem,4vw,3rem);line-height:1.12;letter-spacing:-.04em;margin:8px 0 14px}.contact p{color:#c3cee0;max-width:620px}.contact .kicker{color:#9bb8ff}.contact-box{border:1px solid #ffffff2b;border-radius:16px;padding:22px;background:#ffffff0b}.contact-box p{margin:8px 0}.contact-box strong{display:block;color:#fff;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em}.contact-box a{color:#c9d9ff;overflow-wrap:anywhere}
+footer{padding:20px 0;background:#0b172b;color:#aab6ca;font-size:.82rem}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:850px){.navlinks{display:none;position:absolute;top:71px;left:0;right:0;background:white;padding:18px 5%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu{display:block}.nav-cta{display:none}.hero-grid{grid-template-columns:1fr;gap:28px}.profile-card{max-width:460px}.stats-grid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.research-grid{grid-template-columns:repeat(2,1fr)}.about-grid,.contact-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.hero{padding:58px 0}.research-grid,.skills-grid{grid-template-columns:1fr}section{padding:58px 0}.avatar{height:180px}.publication{grid-template-columns:42px 1fr;padding:15px}.stat{padding:18px 8px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home">Dr. Prabhakar <span>Bhandari</span></a>
+    <nav class="navlinks" id="navlinks">
+      <a href="#about">About</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Connect with me ↗</a>
+    <button class="menu" id="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Academic • Researcher • Educator</span>
+      <h1>Dr. Prabhakar<br><em>Bhandari</em></h1>
+      <p>Mechanical Engineering faculty and researcher working across thermal engineering, energy systems, sustainable materials, computational analysis, and research development at K. R. Mangalam University, Gurugram, India.</p>
+      <div class="hero-actions"><a class="button" href="#research">Explore my research ↘</a><a class="button secondary" href="#contact">Get in touch</a></div>
+      <div class="quick-links">
+        <a href="#publications">Research publications</a><a href="#teaching">Teaching & mentoring</a><a href="#experience">Academic experience</a>
+      </div>
+    </div>
+    <aside class="profile-card">
+      <div class="avatar" aria-label="Profile photo placeholder">PB</div>
+      <h3>Dr. Prabhakar Bhandari</h3>
+      <p class="role">Assistant Professor (Selection Grade) · Mechanical Engineering</p>
+      <div class="profile-details">
+        <div><strong>Institution</strong><span>K. R. Mangalam University</span></div>
+        <div><strong>Location</strong><span>Gurugram, Haryana, India</span></div>
+        <div><strong>Focus</strong><span>Thermal systems & sustainable engineering</span></div>
+      </div>
+    </aside>
+  </div>
+</section>
+<div class="stats"><div class="container stats-grid">
+  <div class="stat"><strong>Thermal</strong><span>Engineering research</span></div>
+  <div class="stat"><strong>CFD</strong><span>Numerical modelling</span></div>
+  <div class="stat"><strong>Research</strong><span>Mentoring & development</span></div>
+  <div class="stat"><strong>Teaching</strong><span>Engineering education</span></div>
+</div></div>
+<section id="about">
+  <div class="container">
+    <div class="section-head"><span class="kicker">About me</span><h2>Connecting engineering research with practical impact.</h2><p>An academic profile focused on research, teaching, interdisciplinary collaboration, and the development of sustainable engineering solutions.</p></div>
+    <div class="about-grid">
+      <div class="panel"><h3>Academic profile</h3><p>I am a Mechanical Engineering academic at K. R. Mangalam University, Gurugram. My interests include heat transfer, thermal management, solar thermal systems, phase-change materials, and sustainable materials and processes.</p><p>I also contribute to research facilitation and instrumentation-facility activities, supporting researchers with research planning, characterization, and academic development.</p></div>
+      <div class="panel"><h3>Research interests</h3><div class="tag-list"><span class="tag">Heat Transfer</span><span class="tag">Solar Air Heaters</span><span class="tag">Microchannel Heat Sinks</span><span class="tag">CFD & Simulation</span><span class="tag">Phase-Change Materials</span><span class="tag">Thermal Energy Storage</span><span class="tag">Biochar</span><span class="tag">Sustainable Materials</span><span class="tag">Life-Cycle Assessment</span></div></div>
+    </div>
+  </div>
+</section>
+<section id="research" style="background:#eef3fb">
+  <div class="container">
+    <div class="section-head"><span class="kicker">Research areas</span><h2>Current themes and technical interests</h2><p>Research themes can be expanded with project summaries, publications, figures, and links to datasets or supplementary materials.</p></div>
+    <div class="research-grid">
+      <article class="research-card"><div class="icon">↗</div><h3>Solar Thermal Systems</h3><p>Artificial roughness, rib and baffle geometries, heat-transfer enhancement, exergy analysis, and thermo-hydraulic performance of solar air heaters.</p></article>
+      <article class="research-card"><div class="icon">◈</div><h3>Thermal Management</h3><p>Microchannel and stepped micro-pin-fin heat sinks, flow arrangements, conjugate heat transfer, and cooling strategies for high-heat-flux systems.</p></article>
+      <article class="research-card"><div class="icon">❄</div><h3>Phase-Change Materials</h3><p>Composite PCMs, latent heat thermal energy storage, ice-slurry systems, solar refrigeration, and thermal-energy applications.</p></article>
+      <article class="research-card"><div class="icon">⌁</div><h3>CFD & Numerical Modelling</h3><p>Computational fluid dynamics, turbulence modelling, mesh independence, finite-volume methods, and simulation-based design evaluation.</p></article>
+      <article class="research-card"><div class="icon">♧</div><h3>Biochar & Sustainable Materials</h3><p>Biomass-derived biochar, material characterization, thermal properties, and potential applications in energy and environmental systems.</p></article>
+      <article class="research-card"><div class="icon">◎</div><h3>Sustainable Construction</h3><p>Geopolymer concrete, recycled aggregates, industrial by-products, and cradle-to-site life-cycle assessment.</p></article>
+    </div>
+  </div>
+</section>
+<section id="experience">
+  <div class="container">
+    <div class="section-head"><span class="kicker">Academic & professional roles</span><h2>Experience and responsibilities</h2><p>A concise overview of academic work and research-support responsibilities.</p></div>
+    <div class="timeline">
+      <article class="timeline-item"><span class="date">1 September 2025 – Present</span><h3>Assistant Professor (Selection Grade) · Mechanical Engineering</h3><p>K. R. Mangalam University, School of Engineering and Technology, Gurugram, Haryana. Teaching, research, student supervision, curriculum development, research publications, and academic/administrative responsibilities.</p></article>
+      <article class="timeline-item"><span class="date">1 August 2024 – 31 August 2025</span><h3>Assistant Professor · Mechanical Engineering</h3><p>K. R. Mangalam University, Gurugram, Haryana. Teaching, research, student guidance, and departmental academic responsibilities.</p></article>
+      <article class="timeline-item"><span class="date">Research support</span><h3>Central Instrumentation Facility (CIF)</h3><p>Research-facility coordination and support for characterization services, instrumentation operations, and interdisciplinary research activities.</p></article>
+      <article class="timeline-item"><span class="date">Research administration</span><h3>Research Development Cell (RDC)</h3><p>Contributions to research finance and administration, research-project processes, faculty support, and research development activities.</p></article>
+    </div>
+  </div>
+</section>
+<section id="publications" style="background:#eef3fb">
+  <div class="container">
+    <div class="section-head"><span class="kicker">Selected research</span><h2>Publications and scholarly work</h2><p>Add verified bibliographic details and DOI links to showcase your strongest work.</p></div>
+    <div class="publication-list">
+      <article class="publication"><div class="pub-no">01</div><div><h3>Design and Exergetic Analysis of Combined Wavy Groove and Delta Wing Vortex Generator for Thermal Management in a Solar Air Heater</h3><p>Solar thermal systems · Heat-transfer enhancement · Exergy analysis</p></div></article>
+      <article class="publication"><div class="pub-no">02</div><div><h3>Numerical Investigation of Increasing-Decreasing Stepped Micro Pin Fin Heat Sink Having Various Arrangements</h3><p>Micro-pin-fin heat sinks · CFD · Thermal management</p></div></article>
+      <article class="publication"><div class="pub-no">03</div><div><h3>Additional publications</h3><p>Use this section for verified paper titles, complete citations, journal details, publication year, DOI, and publisher links.</p></div></article>
+    </div>
+    <div class="note"><strong>Before publishing:</strong> Verify the exact author list, journal, year, volume, pages, and DOI for each paper. Replace all contact/profile placeholders and add your CV and verified publication links. This template intentionally avoids inventing bibliographic details.</div>
+  </div>
+</section>
+<section id="teaching">
+  <div class="container">
+    <div class="section-head"><span class="kicker">Teaching & mentoring</span><h2>Supporting the next generation of researchers</h2><p>Teaching and training in engineering fundamentals, research methodology, computational tools, and scholarly communication.</p></div>
+    <div class="skills-grid">
+      <div class="skill-group"><h3>Teaching areas</h3><p>Mechanical and thermal engineering, heat transfer, energy systems, engineering research methods, experimental design, and technical writing.</p></div>
+      <div class="skill-group"><h3>Research & analysis tools</h3><p>ANSYS Fluent, MATLAB, SolidWorks, CFD workflows, data analysis, scientific literature tools, and research-writing platforms.</p></div>
+      <div class="skill-group"><h3>Research development</h3><p>Research proposal preparation, project coordination, publication support, research ethics, and interdisciplinary collaboration.</p></div>
+      <div class="skill-group"><h3>Workshops & academic engagement</h3><p>Use this area to list invited talks, faculty development programmes, conferences, workshops, and professional recognitions.</p></div>
+    </div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="container contact-grid">
+    <div><span class="kicker">Contact</span><h2>Let's connect and collaborate.</h2><p>For research collaboration, academic exchange, student mentoring, invited talks, instrumentation-facility enquiries, or interdisciplinary projects, please use the professional contact details added below.</p><a class="button" href="mailto:YOUR_EMAIL@example.com">Email me ↗</a></div>
+    <div class="contact-box"><p><strong>Institution</strong>K. R. Mangalam University</p><p><strong>Department</strong>Mechanical Engineering, School of Engineering and Technology</p><p><strong>Location</strong>Gurugram, Haryana, India</p><p><strong>Email</strong><a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></p><p><strong>Academic profiles</strong><a href="YOUR_GOOGLE_SCHOLAR_URL">Google Scholar</a> · <a href="YOUR_ORCID_URL">ORCID</a> · <a href="YOUR_SCOPUS_URL">Scopus</a> · <a href="YOUR_LINKEDIN_URL">LinkedIn</a></p></div>
+  </div>
+</section>
+</main>
+<footer><div class="container footer-inner"><span>© <span id="year"></span> Dr. Prabhakar Bhandari. All rights reserved.</span><span>Academic portfolio · Built for GitHub Pages</span></div></footer>
+<script>
+const menu=document.getElementById('menu'), nav=document.getElementById('navlinks');
+menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');}));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
